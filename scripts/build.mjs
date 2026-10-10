@@ -67,7 +67,7 @@ function layout(id, title, description, content) {
   <meta property="og:type" content="website">
   <meta property="og:title" content="${esc(title)} | Team Rocket FTC 21350">
   <meta property="og:description" content="${esc(description)}">
-  <link rel="icon" href="assets/favicon.svg?v=5" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.svg?v=6" type="image/svg+xml" sizes="any">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -148,5 +148,5 @@ const pages = [
   ['404', 'Page Not Found', 'Return to the Team Rocket website.', `<section class="container not-found"><p class="eyebrow">404</p><h1 class="display">Page Not Found</h1><p>The page you requested could not be found.</p>${btn('index.html', 'Return to home')}</section>`]
 ];
 for (const [id, title, description, content] of pages) await writeFile(resolve(root, `${id}.html`), layout(id, title, description, content));
-await writeFile(resolve(root, 'assets/favicon.svg'), `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><rect width="48" height="48" rx="6" fill="#705bd5"/><polygon points="${starPoints}" transform="translate(4 4) scale(.8333)" fill="none" stroke="white" stroke-width="2.4" stroke-linejoin="round"/></svg>`);
+// Keep the supplied favicon in public/assets; builds must not replace it.
 console.log(`Built ${pages.length} pages.`);
