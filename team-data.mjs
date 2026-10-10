@@ -12,7 +12,7 @@ export const team = {
   "number": "21350",
   "location": "Naperville, Illinois",
   "founded": "2022",
-  "logo": "assets/logo.svg",
+  "logo": "assets/team-rocket-logo.svg",
   "email": "teamrocket21350@gmail.com",
   "instagram": "https://www.instagram.com/ftcteamrocket/",
   "instagramHandle": "@ftcteamrocket",
@@ -52,7 +52,7 @@ export const programs = [
   }
 ];
 
-// TEAM MEMBERS: add, remove, or reorder complete blocks. Mia’s hobbies are pending.
+// TEAM MEMBERS: add, remove, or reorder complete blocks.
 export const members = [
   {
     "name": "Melanie",
@@ -108,7 +108,7 @@ export const members = [
     "area": "Outreach and Hardware",
     "image": "assets/mia-2026.webp",
     "position": "50% 40%",
-    "bio": "Hi! I'm Mia, and I'm an 8th grader and a team member in outreach and hardware."
+    "bio": "Hi! I'm Mia, and I'm an 8th grader and a team member in outreach and hardware. Outside of robotics, I like drawing and reading!"
   }
 ];
 
