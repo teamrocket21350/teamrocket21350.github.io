@@ -235,7 +235,9 @@ export const seasons = [
   }
 ];
 
-// OUTREACH: sourceOrder matches the numbered PDF. Array order controls display.
+// OUTREACH: newest dated events first; undated mentoring keeps its surrounding group.
+// sourceOrder matches the original numbered PDF. Array order controls display.
+// date is the only subtitle; use an empty string for no caption.
 // The newer middle-school note repeats #56012; its second number is not guessed.
 // Older repeated numbers are omitted at items 16 and 18 as requested.
 export const outreach = [
@@ -243,7 +245,7 @@ export const outreach = [
     "sourceOrder": 1,
     "id": "ftc-summer-camp",
     "title": "FTC Summer Camp",
-    "duration": "Five days, seven hours per day",
+    "date": "August 2026",
     "paragraphs": [
       "We hosted a five-day FTC camp for six students in grades 8–10. Students learned to CAD, build, and program a robot to compete in our FTC mini challenge."
     ],
@@ -288,9 +290,7 @@ export const outreach = [
     "sourceOrder": 2,
     "id": "lego-summer-camp-2026",
     "title": "LEGO Robotics Summer Camp",
-    "partner": "Montessori Gift Prep",
-    "location": "Chicago, Illinois",
-    "duration": "August 10–14, 2026",
+    "date": "August 2026",
     "paragraphs": [
       "Rokas and Andy led a week-long FLL Challenge LEGO robotics camp for eight students at Montessori Gift Prep in Chicago. They introduced participants to FIRST, its programs and mission, Core Values, and Gracious Professionalism before exploring the innovation project and robot game through energy-themed missions."
     ],
@@ -319,6 +319,7 @@ export const outreach = [
     "sourceOrder": 3,
     "id": "orthodontics-demo",
     "title": "Orthodontics Office Demo",
+    "date": "April 2026",
     "paragraphs": [
       "We brought our DECODE robot to an orthodontics office for a demonstration."
     ],
@@ -333,7 +334,7 @@ export const outreach = [
     "sourceOrder": 4,
     "id": "ray-chinese-school-2026",
     "title": "Ray Chinese School Demo",
-    "duration": "2026",
+    "date": "February 2026",
     "paragraphs": [
       "We returned to Ray Chinese School for our annual robot demonstration. Students tried driving our DECODE robot and scoring game pieces."
     ],
@@ -345,145 +346,10 @@ export const outreach = [
     ]
   },
   {
-    "sourceOrder": 5,
-    "id": "treasures-demo",
-    "title": "Treasures Demo",
-    "duration": "10th anniversary celebration",
-    "paragraphs": [
-      "We brought our INTO THE DEEP robot to Treasures’ 10th anniversary party, where children could drive it and interact with the team. The event brought together around 100 people and was a collaboration with Treasures, a new sponsor that season.",
-      "Throughout the event, we spoke with families and younger students about FIRST and its different program levels. We also talked with students interested in FLL, encouraging them to take their first steps into robotics."
-    ],
-    "images": [
-      {
-        "src": "assets/treasures-01.webp",
-        "alt": "Team Rocket sharing its robot at the Treasures anniversary celebration, photo 1"
-      },
-      {
-        "src": "assets/treasures-02.webp",
-        "alt": "Team Rocket sharing its robot at the Treasures anniversary celebration, photo 2"
-      },
-      {
-        "src": "assets/treasures-03.webp",
-        "alt": "Team Rocket sharing its robot at the Treasures anniversary celebration, photo 3"
-      },
-      {
-        "src": "assets/treasures-04.webp",
-        "alt": "Team Rocket sharing its robot at the Treasures anniversary celebration, photo 4"
-      }
-    ]
-  },
-  {
-    "sourceOrder": 6,
-    "id": "cad",
-    "title": "Kickoff CAD Workshop",
-    "partner": "DECODE kickoff",
-    "location": "Wheaton Academy",
-    "duration": "2025–26 season kickoff",
-    "paragraphs": [
-      "At kickoff, our team delivered a CAD presentation attended by around 20 FTC teams. We provided live demonstrations to show how CAD works in practice, taught foundational skills, and shared useful tips.",
-      "We highlighted resources teams could use to continue learning independently and prepare for the season. The workshop helped make CAD more approachable for rookie and newer teams."
-    ],
-    "images": [
-      {
-        "src": "assets/cad-kickoff-01.webp",
-        "alt": "Team Rocket presenting its CAD workshop at the DECODE kickoff, photo 1"
-      },
-      {
-        "src": "assets/cad-kickoff-02.webp",
-        "alt": "Team Rocket presenting its CAD workshop at the DECODE kickoff, photo 2"
-      },
-      {
-        "src": "assets/cad-kickoff-03.webp",
-        "alt": "Team Rocket presenting its CAD workshop at the DECODE kickoff, photo 3"
-      }
-    ]
-  },
-  {
-    "sourceOrder": 7,
-    "id": "scullen-stem-fair",
-    "title": "Scullen STEM Fair",
-    "location": "Scullen Middle School",
-    "paragraphs": [
-      "Our team hosted a presentation at Scullen Middle School’s annual STEM fair, an event with around 1,000 attendees. We met incoming and current middle schoolers, showcased our robot and achievements, and shared age-appropriate robotics opportunities with students and parents.",
-      "Students could drive the robot and try scoring game pieces. Many were excited to participate and interested in joining robotics the next season. The event also let us give back to a school that many of our team members attended."
-    ],
-    "images": [
-      {
-        "src": "assets/scullen-01.webp",
-        "alt": "Team Rocket demonstrating robotics at the Scullen STEM Fair, photo 1"
-      },
-      {
-        "src": "assets/scullen-02.webp",
-        "alt": "Team Rocket demonstrating robotics at the Scullen STEM Fair, photo 2"
-      },
-      {
-        "src": "assets/scullen-03.webp",
-        "alt": "Team Rocket demonstrating robotics at the Scullen STEM Fair, photo 3"
-      }
-    ]
-  },
-  {
-    "sourceOrder": 8,
-    "id": "ray-chinese-school-into-the-deep",
-    "title": "Ray Chinese School Demo",
-    "duration": "INTO THE DEEP season",
-    "paragraphs": [
-      "We introduced students at Ray Chinese School to FIRST, its Core Values, and FIRST Tech Challenge. We explained how teamwork and problem solving are part of building and programming a robot. The event announcement reached over 800 students through the school’s mailing system.",
-      "During our presentation, we discussed past FTC seasons and how teams adapt their strategies to a new game each year. We focused on the 2024–25 season, its challenges, and ways to score points.",
-      "We explained autonomous, tele-operated play, and endgame, including strategies for each part of a match. We also covered competition progression from local meets through league tournaments, state, and the world championship, along with advancement priorities and awards.",
-      "We shared examples of our programming, CAD designs, and hardware to show how they work together. Afterward, we demonstrated scoring in the high basket, then let students drive the robot and try scoring themselves."
-    ],
-    "images": [
-      {
-        "src": "assets/ray-into-the-deep-01.webp",
-        "alt": "Students participating in the INTO THE DEEP demonstration at Ray Chinese School, photo 1"
-      },
-      {
-        "src": "assets/ray-into-the-deep-02.webp",
-        "alt": "Students participating in the INTO THE DEEP demonstration at Ray Chinese School, photo 2"
-      },
-      {
-        "src": "assets/ray-into-the-deep-03.webp",
-        "alt": "Students participating in the INTO THE DEEP demonstration at Ray Chinese School, photo 3"
-      },
-      {
-        "src": "assets/ray-into-the-deep-04.webp",
-        "alt": "Students participating in the INTO THE DEEP demonstration at Ray Chinese School, photo 4"
-      }
-    ]
-  },
-  {
-    "sourceOrder": 9,
-    "id": "middle-school-fll-mentoring",
-    "title": "Middle School FLL Mentoring",
-    "paragraphs": [
-      "We mentored two middle school FLL teams, including team #56012, as they advanced from qualifiers to sectionals. We supported their robot development and helped them prepare for competition.",
-      "Across the two teams, their accomplishments included the Rising All-Star Award, a Mentor Award, and top-ten placements for robot points."
-    ],
-    "images": [
-      {
-        "src": "assets/fll-mentoring-01.webp",
-        "alt": "Team Rocket with students from the middle school FLL teams, photo 1"
-      }
-    ]
-  },
-  {
-    "sourceOrder": 10,
-    "id": "elementary-fll-mentoring",
-    "title": "Elementary School FLL Mentoring",
-    "paragraphs": [
-      "We worked with elementary school FLL teams #46325, #46329, #47946, #48456, #56019, and #64908. We helped students develop basic coding skills, introduced the design process and planning, and guided them as they developed their ideas.",
-      "We also helped students practice teamwork and communication. Beyond FLL, we supported other FTC teams by sharing parts, software tips, and portfolios from previous seasons."
-    ],
-    "images": []
-  },
-  {
     "sourceOrder": 11,
     "id": "python",
     "title": "Python Programming Camp",
-    "partner": "Project VISION",
-    "location": "Chinatown–Bridgeport, Chicago",
-    "duration": "Six-week program",
+    "date": "October–November 2025",
     "paragraphs": [
       "Our team partnered with Project VISION to teach Python to students from lower-income families in Chicago. Many students had no previous coding experience, so we focused on introducing programming concepts through creative, hands-on projects.",
       "We covered simple math operations, variables, loops, conditionals, lists, and functions. Students practiced problem solving and collaboration while connecting these ideas to real-world applications.",
@@ -530,26 +396,143 @@ export const outreach = [
     ]
   },
   {
-    "sourceOrder": 12,
-    "id": "scullen-stem-fair-earlier",
-    "title": "Scullen STEM Fair",
-    "duration": "Earlier season",
+    "sourceOrder": 5,
+    "id": "treasures-demo",
+    "title": "Treasures Demo",
+    "date": "September 2025",
     "paragraphs": [
-      "At an earlier Scullen Middle School STEM fair, we showcased our robot and achievements, shared summer program opportunities, and let students drive the robot and try scoring game pieces."
+      "We brought our INTO THE DEEP robot to Treasures’ 10th anniversary party, where children could drive it and interact with the team. The event brought together around 100 people and was a collaboration with Treasures, a new sponsor that season.",
+      "Throughout the event, we spoke with families and younger students about FIRST and its different program levels. We also talked with students interested in FLL, encouraging them to take their first steps into robotics."
     ],
     "images": [
       {
-        "src": "assets/scullen-earlier-01.webp",
-        "alt": "Team Rocket at an earlier Scullen Middle School STEM fair, photo 1"
+        "src": "assets/treasures-01.webp",
+        "alt": "Team Rocket sharing its robot at the Treasures anniversary celebration, photo 1"
+      },
+      {
+        "src": "assets/treasures-02.webp",
+        "alt": "Team Rocket sharing its robot at the Treasures anniversary celebration, photo 2"
+      },
+      {
+        "src": "assets/treasures-03.webp",
+        "alt": "Team Rocket sharing its robot at the Treasures anniversary celebration, photo 3"
+      },
+      {
+        "src": "assets/treasures-04.webp",
+        "alt": "Team Rocket sharing its robot at the Treasures anniversary celebration, photo 4"
       }
+    ]
+  },
+  {
+    "sourceOrder": 6,
+    "id": "cad",
+    "title": "Kickoff CAD Workshop",
+    "date": "September 2025",
+    "paragraphs": [
+      "At kickoff, our team delivered a CAD presentation attended by around 20 FTC teams. We provided live demonstrations to show how CAD works in practice, taught foundational skills, and shared useful tips.",
+      "We highlighted resources teams could use to continue learning independently and prepare for the season. The workshop helped make CAD more approachable for rookie and newer teams."
     ],
-    "compactPhotos": true
+    "images": [
+      {
+        "src": "assets/cad-kickoff-01.webp",
+        "alt": "Team Rocket presenting its CAD workshop at the DECODE kickoff, photo 1"
+      },
+      {
+        "src": "assets/cad-kickoff-02.webp",
+        "alt": "Team Rocket presenting its CAD workshop at the DECODE kickoff, photo 2"
+      },
+      {
+        "src": "assets/cad-kickoff-03.webp",
+        "alt": "Team Rocket presenting its CAD workshop at the DECODE kickoff, photo 3"
+      }
+    ]
+  },
+  {
+    "sourceOrder": 7,
+    "id": "scullen-stem-fair",
+    "title": "Scullen STEM Fair",
+    "date": "May 2025",
+    "paragraphs": [
+      "Our team hosted a presentation at Scullen Middle School’s annual STEM fair, an event with around 1,000 attendees. We met incoming and current middle schoolers, showcased our robot and achievements, and shared age-appropriate robotics opportunities with students and parents.",
+      "Students could drive the robot and try scoring game pieces. Many were excited to participate and interested in joining robotics the next season. The event also let us give back to a school that many of our team members attended."
+    ],
+    "images": [
+      {
+        "src": "assets/scullen-01.webp",
+        "alt": "Team Rocket demonstrating robotics at the Scullen STEM Fair, photo 1"
+      },
+      {
+        "src": "assets/scullen-02.webp",
+        "alt": "Team Rocket demonstrating robotics at the Scullen STEM Fair, photo 2"
+      },
+      {
+        "src": "assets/scullen-03.webp",
+        "alt": "Team Rocket demonstrating robotics at the Scullen STEM Fair, photo 3"
+      }
+    ]
+  },
+  {
+    "sourceOrder": 8,
+    "id": "ray-chinese-school-into-the-deep",
+    "title": "Ray Chinese School Demo",
+    "date": "February 2025",
+    "paragraphs": [
+      "We introduced students at Ray Chinese School to FIRST, its Core Values, and FIRST Tech Challenge. We explained how teamwork and problem solving are part of building and programming a robot. The event announcement reached over 800 students through the school’s mailing system.",
+      "During our presentation, we discussed past FTC seasons and how teams adapt their strategies to a new game each year. We focused on the 2024–25 season, its challenges, and ways to score points.",
+      "We explained autonomous, tele-operated play, and endgame, including strategies for each part of a match. We also covered competition progression from local meets through league tournaments, state, and the world championship, along with advancement priorities and awards.",
+      "We shared examples of our programming, CAD designs, and hardware to show how they work together. Afterward, we demonstrated scoring in the high basket, then let students drive the robot and try scoring themselves."
+    ],
+    "images": [
+      {
+        "src": "assets/ray-into-the-deep-01.webp",
+        "alt": "Students participating in the INTO THE DEEP demonstration at Ray Chinese School, photo 1"
+      },
+      {
+        "src": "assets/ray-into-the-deep-02.webp",
+        "alt": "Students participating in the INTO THE DEEP demonstration at Ray Chinese School, photo 2"
+      },
+      {
+        "src": "assets/ray-into-the-deep-03.webp",
+        "alt": "Students participating in the INTO THE DEEP demonstration at Ray Chinese School, photo 3"
+      },
+      {
+        "src": "assets/ray-into-the-deep-04.webp",
+        "alt": "Students participating in the INTO THE DEEP demonstration at Ray Chinese School, photo 4"
+      }
+    ]
+  },
+  {
+    "sourceOrder": 9,
+    "id": "middle-school-fll-mentoring",
+    "title": "Middle School FLL Mentoring",
+    "date": "",
+    "paragraphs": [
+      "We mentored two middle school FLL teams, including team #56012, as they advanced from qualifiers to sectionals. We supported their robot development and helped them prepare for competition.",
+      "Across the two teams, their accomplishments included the Rising All-Star Award, a Mentor Award, and top-ten placements for robot points."
+    ],
+    "images": [
+      {
+        "src": "assets/fll-mentoring-01.webp",
+        "alt": "Team Rocket with students from the middle school FLL teams, photo 1"
+      }
+    ]
+  },
+  {
+    "sourceOrder": 10,
+    "id": "elementary-fll-mentoring",
+    "title": "Elementary School FLL Mentoring",
+    "date": "",
+    "paragraphs": [
+      "We worked with elementary school FLL teams #46325, #46329, #47946, #48456, #56019, and #64908. We helped students develop basic coding skills, introduced the design process and planning, and guided them as they developed their ideas.",
+      "We also helped students practice teamwork and communication. Beyond FLL, we supported other FTC teams by sharing parts, software tips, and portfolios from previous seasons."
+    ],
+    "images": []
   },
   {
     "sourceOrder": 13,
     "id": "ftc-summer-camp-earlier",
     "title": "FTC Summer Camp",
-    "duration": "Earlier season",
+    "date": "July 2024",
     "paragraphs": [
       "We hosted a week-long summer camp open to community members interested in robotics. Students were introduced to FTC software, hardware, CAD, and problem solving.",
       "We taught the design process from developing an idea and drawing sketches to creating CAD models and making improvements. Some participants went on to start FTC team #26239, ACS Cyber Seahorses."
@@ -567,10 +550,42 @@ export const outreach = [
     "compactPhotos": true
   },
   {
+    "sourceOrder": 12,
+    "id": "scullen-stem-fair-earlier",
+    "title": "Scullen STEM Fair",
+    "date": "May 2024",
+    "paragraphs": [
+      "At an earlier Scullen Middle School STEM fair, we showcased our robot and achievements, shared summer program opportunities, and let students drive the robot and try scoring game pieces."
+    ],
+    "images": [
+      {
+        "src": "assets/scullen-earlier-01.webp",
+        "alt": "Team Rocket at an earlier Scullen Middle School STEM fair, photo 1"
+      }
+    ],
+    "compactPhotos": true
+  },
+  {
+    "sourceOrder": 15,
+    "id": "college-of-dupage-stemcon",
+    "title": "College of DuPage STEMCON",
+    "date": "April 2024",
+    "paragraphs": [
+      "We partnered with other FTC teams and an FRC team at STEMCON to showcase the local FIRST community. We talked with families about the progression between FIRST programs and shared our summer programs."
+    ],
+    "images": [
+      {
+        "src": "assets/cod-stemcon-01.webp",
+        "alt": "Team Rocket and other FIRST teams demonstrating robots at College of DuPage STEMCON, photo 1"
+      }
+    ],
+    "compactPhotos": true
+  },
+  {
     "sourceOrder": 14,
     "id": "ray-chinese-school-earlier",
     "title": "Ray Chinese School Presentation",
-    "duration": "Earlier season",
+    "date": "February 2024",
     "paragraphs": [
       "We introduced students to FIRST and FTC, demonstrated our robot, and gave students hands-on experience driving it."
     ],
@@ -587,26 +602,10 @@ export const outreach = [
     "compactPhotos": true
   },
   {
-    "sourceOrder": 15,
-    "id": "college-of-dupage-stemcon",
-    "title": "College of DuPage STEMCON",
-    "location": "College of DuPage",
-    "paragraphs": [
-      "We partnered with other FTC teams and an FRC team at STEMCON to showcase the local FIRST community. We talked with families about the progression between FIRST programs and shared our summer programs."
-    ],
-    "images": [
-      {
-        "src": "assets/cod-stemcon-01.webp",
-        "alt": "Team Rocket and other FIRST teams demonstrating robots at College of DuPage STEMCON, photo 1"
-      }
-    ],
-    "compactPhotos": true
-  },
-  {
     "sourceOrder": 16,
     "id": "fll-teams-earlier",
     "title": "FLL Team Mentoring",
-    "duration": "Earlier season",
+    "date": "",
     "paragraphs": [
       "We mentored FLL team #55731, the Dino Divers, in programming, robot design, and strategy. At their qualifier, they earned second place for robot performance and the Champions Award, advancing to sectionals.",
       "At sectionals, they placed third for robot performance and were a Champion’s Award finalist. They advanced to state, earned first place for their Innovation Project, and qualified for an international invitational.",
@@ -629,10 +628,26 @@ export const outreach = [
     "compactPhotos": true
   },
   {
+    "sourceOrder": 19,
+    "id": "fll-regional-demo",
+    "title": "FLL Regional Demo",
+    "date": "December 2023",
+    "paragraphs": [
+      "We brought our robot to an FLL regional tournament and demonstrated it for teams and families. We encouraged students to continue in robotics and let them drive the robot and try scoring pixels."
+    ],
+    "images": [
+      {
+        "src": "assets/fll-regional-demo-01.webp",
+        "alt": "Students trying Team Rocket’s robot at an FLL regional tournament, photo 1"
+      }
+    ],
+    "compactPhotos": true
+  },
+  {
     "sourceOrder": 17,
     "id": "fll-summer-camp-earlier",
     "title": "FLL Summer Camp",
-    "duration": "Five-day program",
+    "date": "June 2023",
     "paragraphs": [
       "We held a five-day FLL summer camp for students entering grades 3–7. Students learned the basics of mechanical attachments and programming, built their own robots, and tried hands-on labs. On the last day, they completed missions from previous seasons."
     ],
@@ -656,7 +671,7 @@ export const outreach = [
     "sourceOrder": 18,
     "id": "cyber-seahorses-fll",
     "title": "Cyber Seahorses",
-    "partner": "FLL Team 56613",
+    "date": "",
     "paragraphs": [
       "Two students who attended our FLL summer camp went on to create their own team, Cyber Seahorses. They earned second place for robot performance and advanced to the state competition."
     ],
@@ -664,22 +679,6 @@ export const outreach = [
       {
         "src": "assets/cyber-seahorses-01.webp",
         "alt": "Cyber Seahorses students at an FLL competition, photo 1"
-      }
-    ],
-    "compactPhotos": true
-  },
-  {
-    "sourceOrder": 19,
-    "id": "fll-regional-demo",
-    "title": "FLL Regional Demo",
-    "duration": "Early December, CENTERSTAGE season",
-    "paragraphs": [
-      "We brought our robot to an FLL regional tournament and demonstrated it for teams and families. We encouraged students to continue in robotics and let them drive the robot and try scoring pixels."
-    ],
-    "images": [
-      {
-        "src": "assets/fll-regional-demo-01.webp",
-        "alt": "Students trying Team Rocket’s robot at an FLL regional tournament, photo 1"
       }
     ],
     "compactPhotos": true
